@@ -21,7 +21,7 @@ class Content extends Component{
                     entusiasta em JavaScript e<br />
                     apaixonado por tecnologia.
                     </p>
-                    <Link  to="portfolio"><button class="buttonAzul">ABOUT</button></Link>
+                    <Link  to="about"><button class="buttonAzul">ABOUT</button></Link>
                     <Link to=""><button class="buttonBranco">PORTFOLIO</button></Link>
                 </div>
             </div>

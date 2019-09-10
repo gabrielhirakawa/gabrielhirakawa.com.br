@@ -5,17 +5,25 @@ import jsLogo from '../../assets/js.png';
 import reactLogo from '../../assets/react.png';
 import animamente from '../../assets/animamente.jpg';
 
+import Logo from '../../assets/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faUndoAlt, faCode } from '@fortawesome/free-solid-svg-icons'
+import { SideEffect } from './styleSidebar';
+
 import { Link } from 'react-router-dom';
-import { Texto, AboutTitle, AboutContent } from './styles';
+import { Texto, AboutTitle, AboutContent, BackLink } from './styles';
 
 class About extends Component{
     render(){
         return (
             <div id="main">
-                <div class="layout">
-                    <img class="" src={img} />
-                    <AboutContent>
-                        <AboutTitle>About</AboutTitle>
+                <SideEffect>
+                <div id="logo">
+                    <img src={Logo} alt="logo"/>
+                </div>
+                <AboutContent>
+                        <AboutTitle>About <FontAwesomeIcon icon={faCode} /></AboutTitle>
                         <Texto>
                             <p>
                             Atualmente desenvolvo projetos com foco na stack JS (Node, React e React Native).
@@ -30,9 +38,28 @@ class About extends Component{
                             </p>
                             <img src={animamente}/>
                         </Texto>
+                        <BackLink>
+                            <Link to="/">
+                                Voltar
+                                <span><FontAwesomeIcon icon={faUndoAlt} /></span>
+                                </Link>
+                            
+                        </BackLink>
                         
-                        <Link to="/">Voltar</Link>
                     </AboutContent>
+                <div class="redes-sociais">
+                    <ul>
+                    <li><FontAwesomeIcon icon={faGithub} /></li>
+                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                    <li> <FontAwesomeIcon icon={faYoutube} /></li>
+                    <li> <FontAwesomeIcon icon={faEnvelope} /></li>
+                    </ul>
+                </div>
+            </SideEffect>
+                <div class="layout">
+                    <img class="" src={img} />
+                    
+                    
                 </div>
             </div>
         );

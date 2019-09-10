@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import img from '../assets/img.png';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+
 class Content extends Component{
     render(){
         return(
@@ -18,8 +21,8 @@ class Content extends Component{
                     entusiasta em JavaScript e<br />
                     apaixonado por tecnologia.
                     </p>
-                    <Link  to="about"><button class="buttonAzul">ABOUT</button></Link>
-                    <Link to="portfolio"><button class="buttonBranco">PORTFOLIO</button></Link>
+                    <Link  to="portfolio"><button class="buttonAzul">ABOUT</button></Link>
+                    <Link to=""><button class="buttonBranco">PORTFOLIO</button></Link>
                 </div>
             </div>
         );

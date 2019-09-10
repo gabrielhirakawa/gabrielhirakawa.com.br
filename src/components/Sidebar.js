@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Logo from '../assets/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 class Sidebar extends Component{
     render(){
@@ -10,12 +13,12 @@ class Sidebar extends Component{
                 </div>
                 <div class="redes-sociais">
                     <ul>
-                        <li>
-                        <i class="fab fa-github"/>
-                        <i class="fab fa-linkedin"/>
-                        <i class="fab fa-youtube"/>
-                        <i class="fas fa-envelope"/>
-                        </li>
+                       
+                    <li><FontAwesomeIcon icon={faGithub} /></li>
+                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                    <li> <FontAwesomeIcon icon={faYoutube} /></li>
+                    <li> <FontAwesomeIcon icon={faEnvelope} /></li>
+                        
                     </ul>
                 </div>
             </div>

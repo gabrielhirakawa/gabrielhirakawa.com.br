@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Social from '../../components/Social';
+
 import img from '../../assets/img.png';
 import nodeLogo from '../../assets/node.png';
 import jsLogo from '../../assets/js.png';
@@ -7,8 +9,7 @@ import animamente from '../../assets/animamente.jpg';
 
 import Logo from '../../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faUndoAlt, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faUndoAlt, faCode } from '@fortawesome/free-solid-svg-icons'
 import { SideEffect } from './styleSidebar';
 
 import { Link } from 'react-router-dom';
@@ -47,14 +48,7 @@ class About extends Component{
                         </BackLink>
                         
                     </AboutContent>
-                <div class="redes-sociais">
-                    <ul>
-                    <li><FontAwesomeIcon icon={faGithub} /></li>
-                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                    <li> <FontAwesomeIcon icon={faYoutube} /></li>
-                    <li> <FontAwesomeIcon icon={faEnvelope} /></li>
-                    </ul>
-                </div>
+                <Social />
             </SideEffect>
                 <div class="layout">
                     <img class="" src={img} />

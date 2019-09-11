@@ -8,12 +8,12 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 class Content extends Component{
     render(){
         return(
-            <div class="layout">
+            <div className="layout">
                 <img alt="hira" src={img} />
-                <div class="textocentro">
+                <div className="textocentro  fadeIn">
                     <div id="name">
-                        <span class="firstName">GABRIEL </span>
-                        <span class="lastName">HIRAKAWA</span>
+                        <span className="firstName">GABRIEL </span>
+                        <span className="lastName">HIRAKAWA</span>
                     </div>
                     <h3>Desenvolvedor FullStack</h3>
                     <p>
@@ -21,8 +21,8 @@ class Content extends Component{
                     entusiasta em JavaScript e<br />
                     apaixonado por tecnologia.
                     </p>
-                    <Link  to="about"><button class="buttonAzul">ABOUT</button></Link>
-                    <Link to=""><button class="buttonBranco">PORTFOLIO</button></Link>
+                    <Link  to="about"><button className="buttonAzul">ABOUT</button></Link>
+                    <Link to="portfolio"><button className="buttonBranco">PORTFOLIO</button></Link>
                 </div>
             </div>
         );

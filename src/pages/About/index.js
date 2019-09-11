@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom';
 import { Texto, AboutTitle, AboutContent, BackLink } from './styles';
 
 class About extends Component{
+   
     render(){
         return (
             <div id="main">
@@ -23,21 +24,21 @@ class About extends Component{
                 <div id="logo">
                     <img src={Logo} alt="logo"/>
                 </div>
-                <AboutContent>
+                <AboutContent className="fadeIn">
                         <AboutTitle>About <FontAwesomeIcon icon={faCode} /></AboutTitle>
                         <Texto>
                             <p>
                             Atualmente desenvolvo projetos com foco na stack JS (Node, React e React Native).
                             </p>
-                            <img src={jsLogo}/>
-                            <img src={nodeLogo}/>
-                            <img src={reactLogo}/>
+                            <img alt="js" src={jsLogo}/>
+                            <img alt="node" src={nodeLogo}/>
+                            <img alt="react" src={reactLogo}/>
                         </Texto>
                         <Texto>
                             <p>
                             Roteirista do canal <a target="_blank" href="https://www.youtube.com/channel/UC5rAUc_JK2TIGu-2an-DYMA">Animamente</a>, onde escrevo assuntos sobre tecnologia.
                             </p>
-                            <img src={animamente}/>
+                            <img alt="animamente" src={animamente}/>
                         </Texto>
                         <BackLink>
                             <Link to="/">

@@ -9,7 +9,7 @@ class Content extends Component{
     render(){
         return(
             <div class="layout">
-                <img class="" src={img} />
+                <img alt="hira" src={img} />
                 <div class="textocentro">
                     <div id="name">
                         <span class="firstName">GABRIEL </span>

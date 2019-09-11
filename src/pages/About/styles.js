@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutContent = styled.div`
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,9 +15,11 @@ export const AboutContent = styled.div`
     a:hover{
         color: #333333;
     }
+   
 `;
 
 export const Texto = styled.div`
+
     color: #fff;
     display: flex;
     align-items: center;

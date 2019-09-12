@@ -36,7 +36,9 @@ class About extends Component{
                         </Texto>
                         <Texto>
                             <p>
-                            Roteirista do canal <a target="_blank" href="https://www.youtube.com/channel/UC5rAUc_JK2TIGu-2an-DYMA">Animamente</a>, onde escrevo assuntos sobre tecnologia.
+                            Roteirista do canal 
+                            <a target="_blank" href="https://www.youtube.com/channel/UC5rAUc_JK2TIGu-2an-DYMA" rel="noopener noreferrer">
+                                Animamente</a>, onde escrevo assuntos sobre tecnologia.
                             </p>
                             <img alt="animamente" src={animamente}/>
                         </Texto>
@@ -51,8 +53,8 @@ class About extends Component{
                     </AboutContent>
                 <Social />
             </SideEffect>
-                <div class="layout">
-                    <img class="" src={img} />
+                <div className="layout">
+                    <img alt="logo" src={img} />
                     
                     
                 </div>

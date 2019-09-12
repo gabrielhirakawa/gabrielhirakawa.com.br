@@ -9,10 +9,10 @@ class Social extends Component{
             <div class="redes-sociais">
                     <ul>
                        
-                    <li><a target="_blank" href="https://github.com/gabrielhirakawa"><FontAwesomeIcon icon={faGithub} /></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/gabrielhirakawa/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a target="_blank" href="https://youtube.com/gabrielhirakawa"><FontAwesomeIcon icon={faYoutube} /></a></li>
-                    <li><a target="_blank" href="mailto:gabrielhirakawa@outlook.com"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/gabrielhirakawa"><FontAwesomeIcon icon={faGithub} /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielhirakawa/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://youtube.com/gabrielhirakawa"><FontAwesomeIcon icon={faYoutube} /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="mailto:gabrielhirakawa@outlook.com"><FontAwesomeIcon icon={faEnvelope} /></a></li>
                         
                     </ul>
             </div>

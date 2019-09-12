@@ -2,15 +2,13 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import img from '../assets/img.png';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 class Content extends Component{
     render(){
         return(
             <div className="layout">
                 <img alt="hira" src={img} />
-                <div className="textocentro  fadeIn">
+                <div className="textocentro fadeIn">
                     <div id="name">
                         <span className="firstName">GABRIEL </span>
                         <span className="lastName">HIRAKAWA</span>

@@ -104,6 +104,10 @@ export const List = styled.ul`
         }
     }
 
+    @media(max-width: 450px){
+        width: 280px;
+    }
+
     @media(max-width: 330px){
         width: 200px;
     }

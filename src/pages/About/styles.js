@@ -20,7 +20,7 @@ export const AboutContent = styled.div`
         font-size: 16px;
     }
 
-    @media(max-width: 330px){
+    @media(max-width: 440px){
         font-size: 14px;
     }
    
@@ -47,7 +47,9 @@ export const Texto = styled.div`
     }
     }
 
-    @media(max-width: 330px){
+  
+
+    @media(max-width: 440px){
         width: 250px;
         flex-direction: column;
     }
@@ -62,7 +64,9 @@ color: #FFF;
     @media(max-width: 1200px){
         width: 400px;
     }
-    @media(max-width: 330px){
+
+
+    @media(max-width: 440px){
         font-size: 16px;
         width: 250px;
     }
@@ -78,7 +82,7 @@ export const BackLink = styled.div`
         margin-left: 5px;
     }
 
-    @media(max-width: 330px){
+    @media(max-width: 440px){
         margin-top: 20px;
     }
 

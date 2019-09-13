@@ -15,6 +15,10 @@ export const AboutContent = styled.div`
     a:hover{
         color: #333333;
     }
+
+    @media(max-width: 1200px){
+        font-size: 16px;
+    }
    
 `;
 
@@ -29,12 +33,27 @@ export const Texto = styled.div`
         height: 48px;
         margin-left: 5px;
     }
+
+    @media(max-width: 1200px){
+        width: 400px;
+
+        img {
+        height: 30px;
+        margin-left: 5px;
+    }
+    }
+
 `;
 
 export const AboutTitle = styled.h2`
 color: #FFF;
     width: 540px;
     border-bottom: 2px solid #c1c1c1;
+
+    @media(max-width: 1200px){
+        width: 400px;
+    }
+    
 `;
 
 export const BackLink = styled.div`

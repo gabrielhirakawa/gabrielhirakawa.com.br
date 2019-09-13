@@ -6,8 +6,67 @@ export const Layout = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #336699;
-    height: 100vh;
+    padding-bottom: 50px;
+
+    h1{
+        margin-top: 30px;
+        color: #fff;
+    }
     
+`;
+
+export const Cards = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        background-color: #fff;
+        border-radius: 4px;
+        width: 250px;
+
+
+        & + div{
+            margin-left: 20px;
+
+            @media(max-width: 920px){
+                margin-left: 0;
+            }
+        }
+
+       
+
+        img{
+            height: 120px;
+
+        }
+        p{
+            text-align: center;
+
+            span{
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 920px){
+        flex-direction: column;
+        padding: 10px 5px;
+        width: 250px;
+
+        div{
+            width: 60vw;
+            margin-bottom: 20px;
+        } 
+    }
 `;
 
 export const List = styled.ul`
@@ -33,8 +92,17 @@ export const List = styled.ul`
         }
     }
 
+    @media(max-width: 820px){
+        width: 500px;
+    }
 
+    @media(max-width: 590px){
+        width: 350px;
 
+        li{
+            flex-direction: column;
+        }
+    }
 `;
 
 

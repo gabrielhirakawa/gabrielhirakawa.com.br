@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 class Social extends Component{
     render(){
         return(
-            <div class="redes-sociais">
+            <div className="redes-sociais">
                     <ul>
                        
                     <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/gabrielhirakawa"><FontAwesomeIcon icon={faGithub} /></a></li>

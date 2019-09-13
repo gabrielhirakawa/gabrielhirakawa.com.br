@@ -6,8 +6,8 @@ import img from '../assets/img.png';
 class Content extends Component{
     render(){
         return(
-            <div className="layout">
-                <img alt="hira" src={img} />
+            <div className="layout layoutHome">
+                <img className="lobo" alt="hira" src={img} />
                 <div className="textocentro fadeIn">
                     <div id="name">
                         <span className="firstName">GABRIEL </span>

@@ -7,7 +7,10 @@ import { faUndoAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 
 import { Link } from 'react-router-dom';
-import { List, Layout, Return } from './styles';
+import { List, Layout, Return, Cards } from './styles';
+import git from "../../assets/git.png";
+import barber from "../../assets/barber.png";
+import meetapp from "../../assets/community-icon.png";
 
 class Portfolio extends Component{
     state ={
@@ -19,17 +22,12 @@ class Portfolio extends Component{
         const response = await api.get(`/users/gabrielhirakawa/repos`);
         const vetorRepos=[];
 
-
-
-
         for(let i=0; i<10; i++){
             if(response.data[i].language==="JavaScript"){
                 vetorRepos.push(response.data[i]);
             }
             
         }
-
-        console.log("vetor ",vetorRepos);
        
 
         this.setState({
@@ -45,6 +43,34 @@ class Portfolio extends Component{
         
         return (
         <Layout>
+            <h1>Portfólio</h1>
+            <Cards>
+              <div>
+                <img alt="" src={barber} />
+                <p>
+                    <span>Go Barber</span>
+                    <br/>
+                    Aplicação para agendamento de cortes de cabelo.
+                </p>
+              </div>
+              <div>
+                <img alt="" src={git} />
+                <p>
+                    <span>Git repositories</span>
+                    <br/>
+                    Aplicação para listagem de repositórios do Github.
+                </p>
+              </div>
+              <div>
+                <img alt="" src={meetapp} />
+                <p>
+                    <span>Meetapp</span>
+                    <br/>
+                    Aplicação para cadastro e inscrições de meetup.
+                </p>
+              </div>
+            </Cards>
+
             <List className="fadeIn">
             <h2><FontAwesomeIcon icon={faGithubAlt} /> Últimos repositórios</h2>
             {repositories.map(repository=>(

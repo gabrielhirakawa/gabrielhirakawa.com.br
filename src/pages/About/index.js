@@ -21,7 +21,7 @@ class About extends Component{
         return (
             <div id="main">
                 <SideEffect>
-                <div id="logo">
+                <div className="logo">
                     <img src={Logo} alt="logo"/>
                 </div>
                 <AboutContent className="fadeIn">
@@ -36,9 +36,8 @@ class About extends Component{
                         </Texto>
                         <Texto>
                             <p>
-                            Roteirista do canal 
-                            <a target="_blank" href="https://www.youtube.com/channel/UC5rAUc_JK2TIGu-2an-DYMA" rel="noopener noreferrer">
-                                Animamente</a>, onde escrevo assuntos sobre tecnologia.
+                            Roteirista do canal <a target="_blank" href="https://www.youtube.com/channel/UC5rAUc_JK2TIGu-2an-DYMA" rel="noopener noreferrer">
+                            Animamente</a>, onde escrevo sobre tecnologia.
                             </p>
                             <img alt="animamente" src={animamente}/>
                         </Texto>
@@ -54,7 +53,7 @@ class About extends Component{
                 <Social />
             </SideEffect>
                 <div className="layout">
-                    <img alt="logo" src={img} />
+                    <img className="loboAbout" alt="hira" src={img} />
                     
                     
                 </div>

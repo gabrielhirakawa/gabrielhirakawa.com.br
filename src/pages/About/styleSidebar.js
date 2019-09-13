@@ -7,7 +7,8 @@ display: flex;
   height: 100vh;
   background-color: #336699;
 
-  -webkit-animation-name: animacao;
+  @media(min-width: 1052px){
+    -webkit-animation-name: animacao;
   -moz-animation-name: animacao;
   -o-animation-name: animacao;
   animation-name: animacao;
@@ -29,7 +30,14 @@ display: flex;
   @-o-keyframes animacao{ from {width: 33%} to {width: 66%} }
   @keyframes animacao{ from {width: 33%} to {width: 66%} }
 
- 
+  }
+
+  @media(max-width: 1051px){
+    width: 100%;
+  }
+  
+
+
 
 `;
 

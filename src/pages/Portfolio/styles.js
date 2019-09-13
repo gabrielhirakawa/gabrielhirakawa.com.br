@@ -103,6 +103,10 @@ export const List = styled.ul`
             flex-direction: column;
         }
     }
+
+    @media(max-width: 330px){
+        width: 200px;
+    }
 `;
 
 

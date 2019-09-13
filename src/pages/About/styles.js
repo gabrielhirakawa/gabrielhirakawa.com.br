@@ -19,6 +19,10 @@ export const AboutContent = styled.div`
     @media(max-width: 1200px){
         font-size: 16px;
     }
+
+    @media(max-width: 330px){
+        font-size: 14px;
+    }
    
 `;
 
@@ -43,6 +47,11 @@ export const Texto = styled.div`
     }
     }
 
+    @media(max-width: 330px){
+        width: 250px;
+        flex-direction: column;
+    }
+
 `;
 
 export const AboutTitle = styled.h2`
@@ -52,6 +61,10 @@ color: #FFF;
 
     @media(max-width: 1200px){
         width: 400px;
+    }
+    @media(max-width: 330px){
+        font-size: 16px;
+        width: 250px;
     }
     
 `;
@@ -63,6 +76,10 @@ export const BackLink = styled.div`
 
     span {
         margin-left: 5px;
+    }
+
+    @media(max-width: 330px){
+        margin-top: 20px;
     }
 
 

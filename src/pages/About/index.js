@@ -30,9 +30,11 @@ class About extends Component{
                             <p>
                             Atualmente desenvolvo projetos com foco na stack JS (Node, React e React Native).
                             </p>
+                            <div>
                             <img alt="js" src={jsLogo}/>
                             <img alt="node" src={nodeLogo}/>
                             <img alt="react" src={reactLogo}/>
+                            </div>
                         </Texto>
                         <Texto>
                             <p>

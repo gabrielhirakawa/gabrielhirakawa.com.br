@@ -53,14 +53,18 @@ class Portfolio extends Component{
                     Aplicação para agendamento de cortes de cabelo.
                 </p>
               </div>
+              
               <div>
-                <img alt="" src={git} />
-                <p>
-                    <span>Git repositories</span>
-                    <br/>
-                    Aplicação para listagem de repositórios do Github.
-                </p>
+                    <img alt="" src={git} />
+                    <Link to="/git">
+                        <p>
+                            <span>Git repositories</span>
+                            <br/>
+                            Aplicação para listagem de repositórios do Github.
+                        </p>
+                    </Link>  
               </div>
+              
               <div>
                 <img alt="" src={meetapp} />
                 <p>

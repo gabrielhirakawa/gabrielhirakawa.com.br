@@ -21,6 +21,11 @@ export const Cards = styled.div`
     justify-content: center;
     margin-bottom: 30px;
 
+    a{
+        text-decoration: none;
+        color: #222;
+    }
+
     div{
         display: flex;
         flex-direction: column;

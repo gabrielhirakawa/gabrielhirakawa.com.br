@@ -122,7 +122,9 @@ export const Content = styled.div`
         }
 
         button{
-            margin-top: 10px;
+            margin-top: 5px;
+            color: #222;
+            background-color: #fff;
         }
 
         iframe{

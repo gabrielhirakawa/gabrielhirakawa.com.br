@@ -114,10 +114,10 @@ export const Content = styled.div`
 
     @media(max-width: 390px){
         h1{
-            font-size: 1.1em;
+            font-size: 1em;
         }
         p{
-            font-size: 1em;
+            font-size: 0.9em;
         }
 
         button{

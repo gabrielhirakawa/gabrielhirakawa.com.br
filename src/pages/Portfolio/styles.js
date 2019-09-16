@@ -16,6 +16,10 @@ export const Layout = styled.div`
 `;
 
 export const CardItem = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     div{
         display: flex;
         flex-direction: column;
@@ -31,7 +35,7 @@ export const CardItem = styled.div`
             margin-left: 20px;
 
             @media(max-width: 920px){
-                margin-left: 0;
+                margin-left: 0 !important;
             }
 
         }
@@ -66,7 +70,7 @@ export const Cards = styled.div`
         color: #222;
     }
     
-    }
+    
 
     @media (max-width: 920px){
         flex-direction: column;

@@ -25,81 +25,6 @@ body {
   height: 80px;
 }
 
-@media (max-width: 1051px) {
-  #main {
-    background-color: #336699;
-  }
-  .textocentro {
-    color: #fff;
-  }
-
-  .buttonAzul {
-    border: 2px solid #fff !important;
-  }
-
-  .buttonBranco:hover {
-    border: 2px solid #fff !important;
-  }
-}
-
-@media (max-width: 840px) {
-  #main {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  #side {
-    display: none;
-  }
-  .logoHome {
-    display: none;
-  }
-  .layout .loboAbout {
-    display: none;
-  }
-
-  .layoutHome {
-    order: -1;
-  }
-}
-
-@media (max-width: 730px) {
-  .layoutHome {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0 !important;
-  }
-  .lobo {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .lobo {
-    height: 180px;
-  }
-
-  .textocentro {
-    text-align: center;
-  }
-  h3 {
-    font-size: 16px !important;
-  }
-
-  .firstName {
-    font-size: 22px !important;
-  }
-  .lastName {
-    font-size: 22px !important;
-  }
-  button {
-    font-size: 12px !important;
-    padding: 10px 20px !important;
-  }
-}
-
 .redes-sociais a {
   text-decoration: none;
   color: #fff;
@@ -211,5 +136,87 @@ button {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1051px) {
+  #main {
+    background-color: #336699;
+  }
+  .textocentro {
+    color: #fff;
+  }
+
+  .buttonAzul {
+    border: 2px solid #fff !important;
+  }
+
+  .buttonBranco:hover {
+    border: 2px solid #fff !important;
+  }
+}
+
+@media (max-width: 840px) {
+  #main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  #side {
+    display: none;
+  }
+  .logoHome {
+    display: none;
+  }
+  .layout .loboAbout {
+    display: none;
+  }
+
+  .layoutHome {
+    order: -1;
+  }
+}
+
+@media (max-width: 730px) {
+  .layoutHome {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+  .lobo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 412px) {
+  .logo {
+    align-self: center;
+  }
+  .redes-sociais ul {
+    align-self: center;
+    padding-inline-start: 0 !important;
+  }
+  .lobo {
+    height: 180px;
+  }
+
+  .textocentro {
+    text-align: center;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .firstName {
+    font-size: 22px !important;
+  }
+  .lastName {
+    font-size: 22px !important;
+  }
+  button {
+    font-size: 12px !important;
+    padding: 10px 20px !important;
   }
 }

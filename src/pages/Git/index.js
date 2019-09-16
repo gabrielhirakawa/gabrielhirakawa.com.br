@@ -18,7 +18,7 @@ class Git extends Component {
                     <p>
                         <h4>Projeto realizado na terceira fase do 8º bootcamp da Rockeseat.</h4>
                         <br/>
-                        - Utilização do <span>Styled Components</span> para estilização dos componentes
+                        - <span>Styled Components</span> para estilização dos componentes.
                         <br/>
                         - <span>Axios</span> para obter informações da api do Github.
                         <br/>
@@ -33,13 +33,14 @@ class Git extends Component {
                             Código fonte
                         </button>
                     </BotaoGit>
-                </Content>
-                <BackLink>
+                    <BackLink>
                     <Link to="/portfolio">
                         Voltar ao portfolio
                         <span><FontAwesomeIcon icon={faUndoAlt} /></span>
                     </Link>
-                </BackLink>
+                    </BackLink>
+                </Content>
+                
                
                 
                 

@@ -15,17 +15,7 @@ export const Layout = styled.div`
     
 `;
 
-export const Cards = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-
-    a{
-        text-decoration: none;
-        color: #222;
-    }
-
+export const CardItem = styled.div`
     div{
         display: flex;
         flex-direction: column;
@@ -35,17 +25,20 @@ export const Cards = styled.div`
         background-color: #fff;
         border-radius: 4px;
         width: 250px;
-
-
+        
+        }
         & + div{
             margin-left: 20px;
 
             @media(max-width: 920px){
                 margin-left: 0;
             }
+
         }
 
-       
+        div:hover{
+            box-shadow: inset 0 0 0 5px #c1c1c1;
+        }
 
         img{
             height: 120px;
@@ -60,6 +53,19 @@ export const Cards = styled.div`
             font-size: 20px;
             }
         }
+`;
+
+export const Cards = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    a{
+        text-decoration: none;
+        color: #222;
+    }
+    
     }
 
     @media (max-width: 920px){

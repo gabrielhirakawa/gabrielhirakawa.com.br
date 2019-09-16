@@ -7,7 +7,7 @@ import { faUndoAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 
 import { Link } from 'react-router-dom';
-import { List, Layout, Return, Cards } from './styles';
+import { List, Layout, Return, Cards, CardItem } from './styles';
 import git from "../../assets/git.png";
 import barber from "../../assets/barber.png";
 import meetapp from "../../assets/community-icon.png";
@@ -45,27 +45,35 @@ class Portfolio extends Component{
         <Layout>
             <h1>Portfólio</h1>
             <Cards>
-              <div>
-                <img alt="" src={barber} />
-                <p>
+              <CardItem>
+                  <Link>
+                  <div>
+                     <img alt="" src={barber} />
+                    <p>
                     <span>Go Barber</span>
                     <br/>
                     Aplicação para agendamento de cortes de cabelo.
-                </p>
-              </div>
-              
+                    </p>
+                    </div>
+                  </Link>
+              </CardItem>
+              <CardItem>
+              <Link to="/git">
               <div>
                     <img alt="" src={git} />
-                    <Link to="/git">
+                   
                         <p>
                             <span>Git repositories</span>
                             <br/>
                             Aplicação para listagem de repositórios do Github.
                         </p>
-                    </Link>  
+                    
               </div>
-              
-              <div>
+              </Link> 
+              </CardItem> 
+              <CardItem>
+                  <Link>
+                  <div>
                 <img alt="" src={meetapp} />
                 <p>
                     <span>Meetapp</span>
@@ -73,6 +81,9 @@ class Portfolio extends Component{
                     Aplicação para cadastro e inscrições de meetup.
                 </p>
               </div>
+                  </Link>
+              </CardItem>
+             
             </Cards>
 
             <List className="fadeIn">

@@ -115,6 +115,7 @@ export const Content = styled.div`
     @media(max-width: 390px){
         h1{
             font-size: 1em;
+            padding-top: 2px !important;
         }
         p{
             font-size: 0.9em;
@@ -125,8 +126,8 @@ export const Content = styled.div`
         }
 
         iframe{
-            height: 158px;
-            width: 280px;
+            height: 129px;
+            width: 230px;
         }
     }
    

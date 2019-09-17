@@ -12,7 +12,7 @@ class Git extends Component {
             <Bg>
                 <Content>
                     <h1>Aplicação em <span>React.js</span> para listagem de repositórios do Github.</h1>
-                    <iframe src="https://www.youtube.com/embed/wRAL1QS37gg"
+                    <iframe src="https://www.youtube.com/embed/apJb1M8skLc"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                     <p>
